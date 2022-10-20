@@ -30,9 +30,9 @@ header {
 .logoHeader img {
     display: block;
     width: 22%;
-    margin: auto;
-
-
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 header p {
@@ -72,6 +72,14 @@ nav {
     height: 75%;
     border-color: rgb(7, 20, 10);
 }
+@media(max-width:768px){
+    .iframeVideo{
+        max-width: 100%;
+        height: 50%;
+        display: flex;
+    }
+}     
+
 
 main h1 {
     position: absolute;
@@ -85,6 +93,12 @@ main h1 {
     width: 100%;
     text-shadow: 0 2px 12px #000;
 }
+@media(max-width:768px){
+    main h1{
+        font-size: 50px;
+        line-height: 530px;
+    }
+}      
 
 main h2 {
     position: absolute;
@@ -98,6 +112,13 @@ main h2 {
     width: 100%;
     text-shadow: 0 2px 12px #000;
 }
+@media(max-width:768px){
+    main h2{
+
+        font-size: 25px;
+        line-height: 50px;
+    }
+}      
 
 .iframeVideo2{
     height: 600px;
@@ -109,6 +130,11 @@ main h2 {
     position: relative;
     border-color: rgb(7, 20, 10);
 }
+@media(max-width:768px){
+    .iframeVideo2{
+        display: none;
+    }
+}      
 section{
     background: url(../img/main.jpg);
     height: 972px;
