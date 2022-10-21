@@ -12,34 +12,37 @@
 
 <body>
     <header>
-        <div class="logoHeader">
-            <img src="../img/warhammer-40000-logo.png">
-
+        <div class="container">
+            <nav class="nav_checkbox">
+                
+                
+                <input type="checkbox" id="tab-nav" class="tab-nav">
+                <label for="tab-nav" class="label">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
+                <ul class="content_nav">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="../secciones/games.html">GAMES</a></li>
+                <li><a href="../secciones/libros.html">LIBROS</a></li>
+                <li><a href="../secciones/horus-heresy.html">HORUS HERESY</a></li>
+                <li><a href="../secciones/formulario.html">SUSCRÍBETE</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="navBar">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./games.html">GAMES</a></li>
-                <li><a href="./libros.html">LIBROS</a></li>
-                <li><a href="./horus-heresy.html">LA HEREJÍA DE HORUS</a></li>
-                <li><a href="./formulario.html">SUSCRÍBETE</a></li>
-            </ul>
-        </nav>
+        <!--Trabajando en el logo, que sera apartado del navbar para crear ciernas animaciones-->
     </header>
     <main>
-        <h1>WARHAMMER</h1>
-        <h2>LA HEREJÍA DE HORUS</h2>
         <!--Video largo  de la herejia de horus, el video sera pequeño y habra un background largo-->
-        <iframe width="1276" height="542" src="https://www.youtube.com/embed/Cj3ENSVogTo"
-            title="Warhammer The Horus Heresy Cinematic Trailer" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
+        <div class="horus-titulo">
+        <img src="/img/HORUS-HERESY.jpg" alt="photo 1" >
+    </div>
 
         </iframe>
-        <h3>Una época legendaria.</h3>
+        
         <section>
-
+            <h3>Una época legendaria.</h3>
             <p>Héroes extraudinarios combaten por el derecho a gobernar la galaxia.
             los inmensos ejércitos del Emperador de Terra han conquistado la galaxia en
             una gran cruzada; los guerreros de élite del Emperador han aplastado y
@@ -71,18 +74,26 @@
             <p>Horus es una estrella ascendente,pero ¿hasta qué altura puede llegar
                 una estrella antes de caer?
             </p>
-
-        </section>
-        <div>
             <h4>PRODUCTOS DE LA HEREJIA DE HORUS</h4>
         <article>
             <h3>EL SEÑOR DE LA GUERRA</h3>
-            <img src="images/auto1.jpg" onclick="">
+            <div class="container-section-libro">
+                <p>Este libro relata como Horus asendio a ser señor de la guerra.</p>
+                <img src="/img/Horusrising.jpg" alt="photo 1" >
+            </div>
         </article>
         <article>
             <h3>LA HEREJIA DE HORUS: EDAD DE OSCURIDAD</h3>
-            <img src="images/auto1.jpg" onclick="">
+            <div class="container-section-mesa">
+                <p>Juego de mesa inspirado en la herejia de horus.</p>
+                <img src="/img/age_of_darkness.jpg" alt="photo 1" ">
+            </div>
         </article>
+
+        
+        </section>
+        
+            
     </div>
     </main>
 

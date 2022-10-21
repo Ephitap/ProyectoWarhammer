@@ -5,6 +5,7 @@
 /*
 font-family: 'League Gothic', sans-serif;
 */
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 10px 0px;
+    padding: 20px 20px;
     z-index: 3;
 }
 
@@ -78,7 +79,7 @@ header {
     font-size: 27PX;
     margin-bottom: 5px;
     text-align: center;
-    padding-left: 7px;
+    padding-left: 100px;
 
 }
 
@@ -147,7 +148,7 @@ header {
         max-height: 0;
         overflow: hidden;
         transition: all ease-in-out 0.6s;
-
+        gap: 10px;
     }
 
     .nav_checkbox input:checked ~ .content_nav{
@@ -195,7 +196,8 @@ main h1 {
 @media(max-width:768px){
     main h1{
         font-size: 50px;
-        line-height: 530px;
+        line-height: 547px;
+        
     }
 }      
 
@@ -231,7 +233,8 @@ main h2 {
 }
 @media(max-width:768px){
     .iframeVideo2{
-        display: none;
+        padding-top: 295px;
+        width: 100%;
     }
 }      
 section{
@@ -239,7 +242,29 @@ section{
     height: 972px;
     
 }
-    
+/*Horus heresy foto*/
+main .horus-titulo img{
+    height: 560px;
+}
+/*Horus heresy foto*/
+article .container-section-libro img{
+    height: 150px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .logoGW img{ 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article .container-section-mesa img{
+    height: 140px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 section H3{
     font-family: 'League Gothic', sans-serif;
@@ -283,7 +308,15 @@ section .container-section img{
     padding-top: 10px;
     width: 700px;
 }
-
+@media(max-width:768px){
+    section .container-section{
+        
+        width: 100%;
+    }
+    section .container-section img{
+        width: 480px;
+    }
+}      
 footer{
     background-color: #000;
     color: #fff;
