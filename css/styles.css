@@ -21,49 +21,148 @@ header {
     background: url(../img/40k-header.jpg);
     border: 2px solid black;
     background-size: auto;
-    padding: px;
+    width: 100%;
     font-family: 'League Gothic', sans-serif;
     color: white;
     text-shadow: 0 22px 22px #000;
+    
 }
 
-.logoHeader img {
-    display: block;
-    width: 22%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
+.nav_checkbox{
 
-header p {
-    font-size: 25px;
-}
-
-nav {
-    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+    padding: 10px 0px;
+    z-index: 3;
 }
 
-.navBar {
+.logo{
+    background-image: url(../img/Warhammer-logo.jpg);
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: auto;
+
+}
+
+.tab-nav{
+
+    outline: none;
+    display: none;
+
+}
+
+.label{
+
+    display: none;
+    color: white;
+
+}
+
+.burger{
+
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+
+}
+
+.content_nav{
+    padding-top: 100px;
     list-style: none;
     /*elimina los puntos del li*/
     display: flex;
-    gap: 150px;
+    gap: 170px;
     font-size: 27PX;
     margin-bottom: 5px;
     text-align: center;
+    padding-left: 7px;
+
 }
 
-.navBar li a {
+.content_nav li{
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+.content_nav li a{
+
     text-decoration: none;
-    color: rgb(219, 219, 219);
+    color: white;
+    position: relative;
+
 }
 
-.navBar li a:hover {
+.content_nav li a::after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover {
     color: rgb(33, 95, 27);
+}
+
+
+
+@media screen and (max-width: 1280px){
+
+    .container{
+
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 770px){
+
+    .label{
+
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+
+    }
+
+    .content_nav{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+
+    }
+
+    .nav_checkbox input:checked ~ .content_nav{
+
+        max-height: 500px;
+
+    }
+
+    .content_nav li{
+
+        padding: 15px 0px;
+
+    }
+
+
 }
 
 .iframeVideo {
