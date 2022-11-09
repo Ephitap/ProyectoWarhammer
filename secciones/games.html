@@ -2,170 +2,131 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Coderhouse Abraham León </title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="../img/">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Coderhouse Abraham León </title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="../img/">
 </head>
 
 <body>
   <header>
     <div class="container">
-        <nav class="nav_checkbox">
-            
-            
-            <input type="checkbox" id="tab-nav" class="tab-nav">
-            <label for="tab-nav" class="label">
-                <div class="burger"></div>
-                <div class="burger"></div>
-                <div class="burger"></div>
-            </label>
-            <ul class="content_nav">
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="../secciones/games.html">GAMES</a></li>
-            <li><a href="../secciones/libros.html">LIBROS</a></li>
-            <li><a href="../secciones/horus-heresy.html">HORUS HERESY</a></li>
-            <li><a href="../secciones/formulario.html">SUSCRÍBETE</a></li>
-            </ul>
-        </nav>
+      <nav class="nav_checkbox">
+
+
+        <input type="checkbox" id="tab-nav" class="tab-nav">
+        <label for="tab-nav" class="label">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </label>
+        <ul class="content_nav">
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="../secciones/games.html">GAMES</a></li>
+          <li><a href="../secciones/libros.html">LIBROS</a></li>
+          <li><a href="../secciones/horus-heresy.html">HORUS HERESY</a></li>
+          <li><a href="../secciones/formulario.html">SUSCRÍBETE</a></li>
+        </ul>
+      </nav>
     </div>
     <!--Trabajando en el logo, que sera apartado del navbar para crear ciernas animaciones-->
-</header>
-    <main>
-        <!--Los ID se usaran para JavaScript a futuro,no se utilizaran con css-->
-        <div class="wrapper">
-            <div class="slider" id="slider">
-              <ul class="slides">
-                <li class="slide" id="slide1">
-                  <a href="#">
-                    <p class="caption">Titulo de juego</p>
-                    <img src="photo1.jpg" alt="photo 1">
-                  </a>
-                </li>
-                <li class="slide" id="slide2">
-                  <a href="#">
-                    <p class="caption">Titulo de juego</p>
-                    <img src="photo2.jpg" alt="photo 2">
-                  </a>
-                </li>
-                <li class="slide" id="slide3">
-                  <a href="#">
-                    <p class="caption">Titulo de juego</p>
-                    <img src="photo3.jpg" alt="photo 3">
-                  </a>
-                </li>
-                <li class="slide" id="slide4">
-                  <a href="#">
-                    <p class="caption">Titulo de juego</p>
-                    <img src="photo4.jpg" alt="photo 4">
-                  </a>
-                </li>
-                <li class="slide" id="slide5">
-                  <a href="#">
-                     <p class="caption">Titulo de juego</p>
-                     <img src="photo5.jpg" alt="photo 5">
-                  </a>
-                </li>
-                <li class="slide">
-                  <a href="#">
-                    <p class="caption">Titulo de juego</p>
-                    <img src="photo1.jpg" alt="photo 1">
-                  </a>
-                </li>
-              </ul>
-              <ul class="slider-controler">
-                <li><a href="#slide1">&bullet;</a></li>
-                <li><a href="#slide2">&bullet;</a></li>
-                <li><a href="#slide3">&bullet;</a></li>
-                <li><a href="#slide4">&bullet;</a></li>
-                <li><a href="#slide5">&bullet;</a></li>
-              </ul>
-            </div>
+  </header>
+  <main>
+    <!--Trabajando en un slider card-->
+    <section class="section-games">
+
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-sisters">
+            <h1>Hermanas de batalla</h1>
+            <p>No hay nadie tan lleno de fe y furia como las hermanas de batalla. Todas ellas se convertiran en
+              martires
+              para cumplir con su mision sagradas
+            </p>
           </div>
-          <br><br>
-          <section>
-            
-            <article>
-                <h3>Titulo Producto</h3>
-                <img src="images/auto1.jpg" >
-                <p>Nombre Producto</p>
-                <p>Precio producto</p>
-            </article>
-            <article>
-                <h3>Titulo Producto</h3>
-                <img src="images/auto1.jpg" >
-                <p>Nombre Producto</p>
-                <p>Precio producto</p>
-            </article>
-            <article>
-                <h3>Titulo Producto</h3>
-                <img src="images/auto1.jpg" >
-                <p>Nombre Producto</p>
-                <p>Precio producto</p>
-            </article>
-            <article>
-                <h3>Titulo Producto</h3>
-                <img src="images/auto1.jpg" >
-                <p>Nombre Producto</p>
-                <p>Precio producto</p>
-            </article>
-            <article>
-                <h3>Titulo Producto</h3>
-                <img src="images/auto1.jpg" >
-                <p>Nombre Producto</p>
-                <p>Precio producto</p>
-            </article>
-            <article>
-                <h3>Titulo Producto</h3>
-                <img src="images/auto1.jpg" >
-                <p>Nombre Producto</p>
-                <p>Precio producto</p>
-            </article>
-          </section>
-          <div class="paginado">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-          </div>
-    </main>
-   
-
-
-
-
-
-
-    <footer>
-        <img src="../img/Warhammer-logo.jpg" alt="" class="logo">
 
         </div>
-        <div class="social-icons-container">
-            <a href="" class="social-icon"></a>
-            <a href="" class="social-icon"></a>
-            <a href="" class="social-icon"></a>
-            <a href="" class="social-icon"></a>
+        <div class="card">
+          <div class="card-space-marine">
+            <h1>Marines Espaciales</h1>
+            <p>A la vanguardia de los ejercitos de la humanidad pelean los marines espaciales.
+              Son lo mejor de lo mejor, frenan enemigos de pesadillas y no conocen el miedo
+            </p>
+          </div>
         </div>
-        <ul class="footer-menu-container">
-            <li class="menu-item">GAMES Workshop</li>
-            <li class="menu-item">FORGE WORLD</li>
-            <li class="menu-item">COOKIE NOTICE</li>
-            <li class="menu-item">PRIVACY NOTICE</li>
-            <li class="menu-item">BLACK LIBRARY</li>
-        </ul>
-        <span class="copyright">&copy;© Copyright Games Workshop Limited 2022. GW, Games Workshop, Citadel, White Dwarf,
-            Space Marine, 40K, Warhammer, Warhammer 40,000, the ‘Aquila’ Double-headed Eagle logo,
-            Warhammer Age of Sigmar, Battletome, Stormcast Eternals, and all associated logos,
-            illustrations, images, names, creatures, races, vehicles, locations, weapons, characters,
-            and the distinctive likenesses thereof, are either ® or ™, and/or © Games Workshop Limited,
-            variably registered around the world. All Rights Reserved.</span>
-    </footer>
+        <div class="card">
+          <div class="card-mechanicus">
+            <h1>ADEPTUS MECHANICUS</h1>
+            <p>Los Adeptus Mechanicus blanden armas tecnológicas extrañas y arcaicas con
+              un poder fenomenal.A la hora de repeler un enemigo son agresivos, tenaces y aterradores
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-custodes">
+            <h1>ADEPTUS CUSTODES</h1>
+            <p>Los Adeptus Custodes fuern los Primeros (y los mejores) supersoldados diseñado por el Emperador: son
+              ejemplares
+              de leyenda casi inmortales.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-militarum">
+            <h1>ASTRA MILITARUM</h1>
+            <p>El Astra Militarum son un brazo tosco, desplegado
+              a escala gálactica. No luchan con sutileza, si no con fuerza bruta.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-necron">
+            <h1>NECRON</h1>
+            <p>Surgios de una era anterior a la existencia de la Humanidad, un antiguo poder trasciende el
+              velo de la muerte causando un frío desdén por todas las demás formas de vida de la galaxia
+            </p>
+          </div>
+        </div>
+      </div>
+
+     
+
+      
+    </section>
+  </main>
+
+
+
+
+
+
+
+  <footer class="footer-games">
+    <img src="../img/Warhammer-logo.jpg" alt="" class="logo">
+
+    </div>
+    <div class="social-icons-container">
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+    </div>
+    <ul class="footer-menu-container">
+      <li class="menu-item">GAMES Workshop</li>
+      <li class="menu-item">FORGE WORLD</li>
+      <li class="menu-item">COOKIE NOTICE</li>
+      <li class="menu-item">PRIVACY NOTICE</li>
+      <li class="menu-item">BLACK LIBRARY</li>
+    </ul>
+    <span class="copyright">&copy;© Copyright Games Workshop Limited 2022. GW, Games Workshop, Citadel, White Dwarf,
+      Space Marine, 40K, Warhammer, Warhammer 40,000, the ‘Aquila’ Double-headed Eagle logo,
+      Warhammer Age of Sigmar, Battletome, Stormcast Eternals, and all associated logos,
+      illustrations, images, names, creatures, races, vehicles, locations, weapons, characters,
+      and the distinctive likenesses thereof, are either ® or ™, and/or © Games Workshop Limited,
+      variably registered around the world. All Rights Reserved.</span>
+  </footer>
 </body>
 </body>
 

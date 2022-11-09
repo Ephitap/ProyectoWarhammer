@@ -1,0 +1,146 @@
+section {
+    background: url(../img/main.jpg);
+    height: 972px;
+    color: black;
+    text-shadow: none;
+
+    h3 {
+        font-family: 'League Gothic', sans-serif;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: 'Noto Sans', sans-serif;
+        text-align: center;
+        padding-top: 10px;
+        vertical-align: middle;
+        font-size: 1.2rem;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 15px 15px 15px 15px;
+        background-color: rgb(55, 182, 44);
+        border-color: aliceblue;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 36px;
+        color: aliceblue;
+
+        &:hover {
+            background-color: rgb(33, 95, 27);
+        }
+    }
+
+    h4 {
+        font-family: 'League Gothic', sans-serif;
+        text-align: center;
+        font-size: 44px;
+        padding-top: 10px;
+    }
+
+    .container-section {
+        width: 700px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+
+        @media(max-width:768px) {
+            width: 100%;
+        }
+    }
+
+    .container-section img {
+        padding-top: 10px;
+        width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media(max-width:768px) {
+            width: 480px;
+        }
+    }
+
+    article {
+        .container-section-libro img {
+            height: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container-section-mesa img {
+            height: 140px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    
+
+            .card-wrapper {
+                position: relative;
+  background: black;
+  max-width: 100%;
+  min-height: 650px;
+  height: 410px;
+  margin: 0 auto;
+  overflow: hidden;
+
+
+                .card {
+                    color: white;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    width: 300px;
+                    /* Box dimensions */
+                    height: 400px;
+                    transform: translate(-50%, -50%);
+
+                    h1 {
+                        font-family: 'League Gothic', sans-serif;
+                        font-size: 36px;
+                        line-height: 100px;
+                        color: white;
+                    }
+
+                    p {
+                        padding-top: 100px;
+                        font-family: 'League Gothic', sans-serif;
+                        font-size: 20px;
+                    }
+
+                    .card-sisters {
+                        background-image: (url(/img/card-sister.jpg));
+
+                    }
+
+                    .card-space-marine {
+                        background-image: (url(/img/card-space-marine.jpg));
+
+                    }
+
+                    .card-mechanicus {
+                        background-image: url(/img/card-mechanicus.jpg);
+                    }
+
+                    .card-custodes {
+                        background-image: url(/img/card-custodes.jpg);
+                    }
+
+                    .card-militarum {
+                        background-image: url(/img/card-astra-militarum.jpg);
+                    }
+
+                    .card-necron {
+                        background-image: url(/img/card-necron.jpg);
+                    }
+                }
+            }
+        }
+    

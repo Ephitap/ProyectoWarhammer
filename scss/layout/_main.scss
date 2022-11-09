@@ -1,0 +1,70 @@
+main {
+    color: white;
+    text-shadow: 0 2px 12px #000;
+    font-family: 'League Gothic', sans-serif;
+
+    h1 {
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        font-size: 100px;
+        line-height: 500px;
+        height: 50%;
+        width: 100%;
+        @media(max-width:768px){
+            font-size: 50px;
+        line-height: 547px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        font-size: 70px;
+        line-height: 250px;
+        height: 50%;
+        width: 100%;
+        @media(max-width:768px){
+            font-size: 25px;
+            line-height: 50px;
+        }
+    }
+    /*---iframes---*/
+    .iframeVideo {
+        position:absolute;
+        width: 100%;
+        height: 75%;
+        border-color: rgb(7, 20, 10);
+        @media(max-width:768px){
+           
+                max-width: 100%;
+                height: 50%;
+                display: flex;
+            
+    }
+}
+.iframeVideo2{
+    height: 250px;
+    width: 45%;
+    padding-top: 30%;
+    z-index: 2;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border-color: rgb(7, 20, 10);
+    @media(max-width:768px){
+        padding-top: 295px;
+        width: 100%;
+    }
+}
+.horus-titulo img{
+    height: 560px;
+}
+.logoGW img{ 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}

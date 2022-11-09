@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url(../warhammer/img/);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  background: url(../img/40k-header.jpg);
+  border: 2px solid black;
+  background-size: auto;
+  width: 100%;
+  font-family: 'League Gothic', sans-serif;
+  color: white;
+  text-shadow: 0 22px 22px #000;
+}
+
+.nav_checkbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px;
+  z-index: 3;
+}
+
+.logo {
+  background-image: url(../img/Warhammer-logo.jpg);
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: auto;
+}
+
+.tab-nav {
+  outline: none;
+  display: none;
+}
+
+.label {
+  display: none;
+  color: white;
+}
+
+.burger {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.content_nav {
+  padding-top: 100px;
+  list-style: none;
+  /*elimina los puntos del li*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 170px;
+  font-size: 27PX;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.content_nav li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.content_nav li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.content_nav li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform ease-in-out 0.5s;
+  transition: -webkit-transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+}
+
+.content_nav li a:hover {
+  color: #215f1b;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .label {
+    display: -ms-grid;
+    display: grid;
+    cursor: pointer;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    padding-right: 10px;
+  }
+  .content_nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all ease-in-out 0.6s;
+    transition: all ease-in-out 0.6s;
+    gap: 10px;
+  }
+  .nav_checkbox input:checked ~ .content_nav {
+    max-height: 500px;
+  }
+  .content_nav li {
+    padding: 15px 0px;
+  }
+}
+
+main {
+  color: white;
+  text-shadow: 0 2px 12px #000;
+  font-family: 'League Gothic', sans-serif;
+  /*---iframes---*/
+}
+
+main h1 {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  font-size: 100px;
+  line-height: 500px;
+  height: 50%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 50px;
+    line-height: 547px;
+  }
+}
+
+main h2 {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  font-size: 70px;
+  line-height: 250px;
+  height: 50%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  main h2 {
+    font-size: 25px;
+    line-height: 50px;
+  }
+}
+
+main .iframeVideo {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  border-color: #07140a;
+}
+
+@media (max-width: 768px) {
+  main .iframeVideo {
+    max-width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main .iframeVideo2 {
+  height: 250px;
+  width: 45%;
+  padding-top: 30%;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border-color: #07140a;
+}
+
+@media (max-width: 768px) {
+  main .iframeVideo2 {
+    padding-top: 295px;
+    width: 100%;
+  }
+}
+
+main .horus-titulo img {
+  height: 560px;
+}
+
+main .logoGW img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  background: url(../img/main.jpg);
+  height: 972px;
+  color: black;
+  text-shadow: none;
+}
+
+section h3 {
+  font-family: 'League Gothic', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+section p {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+
+section button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 15px 15px 15px;
+  background-color: #37b62c;
+  border-color: aliceblue;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 36px;
+  color: aliceblue;
+}
+
+section button:hover {
+  background-color: #215f1b;
+}
+
+section h4 {
+  font-family: 'League Gothic', sans-serif;
+  text-align: center;
+  font-size: 44px;
+  padding-top: 10px;
+}
+
+section .container-section {
+  width: 700px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  section .container-section {
+    width: 100%;
+  }
+}
+
+section .container-section img {
+  padding-top: 10px;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  section .container-section img {
+    width: 480px;
+  }
+}
+
+section article .container-section-libro img {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section article .container-section-mesa img {
+  height: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section .card-wrapper {
+  position: relative;
+  background: black;
+  max-width: 100%;
+  min-height: 650px;
+  height: 410px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+section .card-wrapper .card {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  /* Box dimensions */
+  height: 400px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section .card-wrapper .card h1 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 36px;
+  line-height: 100px;
+  color: white;
+}
+
+section .card-wrapper .card p {
+  padding-top: 100px;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 20px;
+}
+
+section .card-wrapper .card .card-sisters {
+  background-image: url(/img/card-sister.jpg);
+}
+
+section .card-wrapper .card .card-space-marine {
+  background-image: url(/img/card-space-marine.jpg);
+}
+
+section .card-wrapper .card .card-mechanicus {
+  background-image: url(/img/card-mechanicus.jpg);
+}
+
+section .card-wrapper .card .card-custodes {
+  background-image: url(/img/card-custodes.jpg);
+}
+
+section .card-wrapper .card .card-militarum {
+  background-image: url(/img/card-astra-militarum.jpg);
+}
+
+section .card-wrapper .card .card-necron {
+  background-image: url(/img/card-necron.jpg);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  width: auto;
+  position: flex;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .logo {
+  height: 100px;
+  margin-bottom: 1rem;
+  margin: auto;
+}
+
+footer .social-icons-container, footer .footer-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+footer .social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 0px;
+  border: 1px solid #f2f2f2;
+  background-image: url(../img/icons8-facebook-24.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+footer .social-icon:hover {
+  background-color: #121212;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+footer .social-icon:nth-last-of-type(2) {
+  background-image: url(../img/icons8-instagram-24.png);
+}
+
+footer .social-icon:nth-last-of-type(3) {
+  background-image: url(../img/icons8-twitter-squared-24.png);
+}
+
+footer .social-icon:nth-last-of-type(4) {
+  background-image: url(../img/icons8-youtube-24.png);
+}
+
+footer .footer-menu-container {
+  list-style-type: none;
+  color: #f2f2f2;
+  font-size: 18px;
+}
+
+footer .menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+footer .menu-item:hover {
+  background-color: #121212;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+footer .copyright {
+  color: #f2f2f2;
+  opacity: 0.3;
+  text-align: center;
+  font-family: 'Noto Sans',sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
