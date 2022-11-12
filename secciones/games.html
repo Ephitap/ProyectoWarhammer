@@ -8,6 +8,10 @@
   <title>Proyecto Coderhouse Abraham León </title>
   <link rel="stylesheet" href="../css/style.css">
   <link href="../img/">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" >
 </head>
 
 <body>
@@ -33,67 +37,66 @@
     </div>
     <!--Trabajando en el logo, que sera apartado del navbar para crear ciernas animaciones-->
   </header>
+  
   <main>
+    
     <!--Trabajando en un slider card-->
     <section class="section-games">
 
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-sisters">
-            <h1>Hermanas de batalla</h1>
-            <p>No hay nadie tan lleno de fe y furia como las hermanas de batalla. Todas ellas se convertiran en
-              martires
-              para cumplir con su mision sagradas
-            </p>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card-space-marine">
-            <h1>Marines Espaciales</h1>
-            <p>A la vanguardia de los ejercitos de la humanidad pelean los marines espaciales.
-              Son lo mejor de lo mejor, frenan enemigos de pesadillas y no conocen el miedo
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-mechanicus">
-            <h1>ADEPTUS MECHANICUS</h1>
+<div class="wrapper">
+  <div class="carousel owl-carousel">
+    <div class="card card-1">
+      <h1>Hermanas de batalla</h1>
+      <p>No hay nadie tan lleno de fe y furia como las hermanas de batalla. Todas ellas se convertiran en
+        martires
+        para cumplir con su mision sagradas
+     </div>
+    <div class="card card-2">
+      <h1>Marines Espaciales</h1>
+      <p>A la vanguardia de los ejercitos de la humanidad pelean los marines espaciales.
+        Son lo mejor de lo mejor, frenan enemigos de pesadillas y no conocen el miedo
+      </p>
+    </div>
+    <div class="card card-3">
+      <h1>ADEPTUS MECHANICUS</h1>
             <p>Los Adeptus Mechanicus blanden armas tecnológicas extrañas y arcaicas con
               un poder fenomenal.A la hora de repeler un enemigo son agresivos, tenaces y aterradores
             </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-custodes">
-            <h1>ADEPTUS CUSTODES</h1>
-            <p>Los Adeptus Custodes fuern los Primeros (y los mejores) supersoldados diseñado por el Emperador: son
-              ejemplares
-              de leyenda casi inmortales.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-militarum">
-            <h1>ASTRA MILITARUM</h1>
-            <p>El Astra Militarum son un brazo tosco, desplegado
-              a escala gálactica. No luchan con sutileza, si no con fuerza bruta.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-necron">
-            <h1>NECRON</h1>
-            <p>Surgios de una era anterior a la existencia de la Humanidad, un antiguo poder trasciende el
-              velo de la muerte causando un frío desdén por todas las demás formas de vida de la galaxia
-            </p>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="card card-4">
+      <h1>ADEPTUS CUSTODES</h1>
+      <p>Los Adeptus Custodes fuern los Primeros (y los mejores) supersoldados diseñado por el Emperador: son
+        ejemplares
+        de leyenda casi inmortales.
+      </p>
+    </div>
+    <div class="card card-5">
+      <h1>ASTRA MILITARUM</h1>
+      <p>El Astra Militarum son un brazo tosco, desplegado
+        a escala gálactica. No luchan con sutileza, si no con fuerza bruta.
+      </p>
+    </div>
+    <div class="card card-5">
+      <h1>ASTRA MILITARUM</h1>
+      <p>El Astra Militarum son un brazo tosco, desplegado
+        a escala gálactica. No luchan con sutileza, si no con fuerza bruta.
+      </p>
+    </div>
+    <div class="card card-5">
+      <h1>ASTRA MILITARUM</h1>
+      <p>El Astra Militarum son un brazo tosco, desplegado
+        a escala gálactica. No luchan con sutileza, si no con fuerza bruta.
+      </p>
+    </div>
+    <div class="card card-5">
+      <h1>ASTRA MILITARUM</h1>
+      <p>El Astra Militarum son un brazo tosco, desplegado
+        a escala gálactica. No luchan con sutileza, si no con fuerza bruta.
+      </p>
+    </div>
+  </div>
+</div>
 
-     
-
-      
     </section>
   </main>
 
@@ -127,7 +130,24 @@
       and the distinctive likenesses thereof, are either ® or ™, and/or © Games Workshop Limited,
       variably registered around the world. All Rights Reserved.</span>
   </footer>
+  
+  
+  <script>
+    $(".carousel").owlCarousel({
+  margin: 20,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 60000,
+  autoplayHoverPause: true,
+  responsive: {
+      0: { items: 1, nav: false },
+      600: { items: 2, nav: false },
+      1000: { items: 3, nav: false },
+  }
+});
+
+  </script>
 </body>
-</body>
+
 
 </html>

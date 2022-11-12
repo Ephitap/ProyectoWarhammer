@@ -11,6 +11,86 @@ body {
   width: 100%;
   position: relative; }
 
+.gtco-testimonials {
+  position: relative;
+  margin-top: 30px; }
+  .gtco-testimonials h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 50px; }
+  .gtco-testimonials .owl-stage-outer {
+    padding: 30px 0; }
+  .gtco-testimonials .owl-nav {
+    display: none; }
+  .gtco-testimonials .owl-dots {
+    text-align: center; }
+    .gtco-testimonials .owl-dots span {
+      position: relative;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      display: block;
+      background: #fff;
+      border: 2px solid #01b0f8;
+      margin: 0 5px; }
+    .gtco-testimonials .owl-dots .active {
+      box-shadow: none; }
+      .gtco-testimonials .owl-dots .active span {
+        background: #01b0f8;
+        box-shadow: none;
+        height: 12px;
+        width: 12px;
+        margin-bottom: -1px; }
+  .gtco-testimonials .card {
+    background: #fff;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+    margin: 0 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 0; }
+    .gtco-testimonials .card .card-img-top {
+      max-width: 100px;
+      border-radius: 50%;
+      margin: 15px auto 0;
+      box-shadow: 0 8px 20px -4px #95abbb;
+      width: 100px;
+      height: 100px; }
+    .gtco-testimonials .card h5 {
+      color: #01b0f8;
+      font-size: 21px;
+      line-height: 1.3; }
+      .gtco-testimonials .card h5 span {
+        font-size: 18px;
+        color: #666666; }
+    .gtco-testimonials .card p {
+      font-size: 18px;
+      color: #555;
+      padding-bottom: 15px; }
+  .gtco-testimonials .active {
+    opacity: 0.5;
+    transition: all 0.3s; }
+  .gtco-testimonials .center {
+    opacity: 1; }
+    .gtco-testimonials .center h5 {
+      font-size: 24px; }
+      .gtco-testimonials .center h5 span {
+        font-size: 20px; }
+    .gtco-testimonials .center .card-img-top {
+      max-width: 100%;
+      height: 120px;
+      width: 120px; }
+
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px; } }
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  outline: 0; }
+
+.owl-carousel button.owl-dot {
+  outline: 0; }
+
 header {
   background: url(../img/40k-header.jpg);
   border: 2px solid black;
@@ -59,6 +139,9 @@ header {
   text-align: center;
   padding-left: 100px; }
 
+.content_nav ul {
+  text-align: center; }
+
 .content_nav li {
   display: inline-block;
   padding-right: 10px; }
@@ -101,7 +184,8 @@ header {
     max-height: 0;
     overflow: hidden;
     transition: all ease-in-out 0.6s;
-    gap: 10px; }
+    gap: 10px;
+    padding-left: 0px; }
   .nav_checkbox input:checked ~ .content_nav {
     max-height: 500px; }
   .content_nav li {
@@ -225,44 +309,57 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  section .card-wrapper {
+  section .wrapper {
+    width: 100%; }
+  section .carousel {
+    max-width: 980px;
+    margin: auto;
+    padding: 0; }
+  section .carousel .card {
+    color: #fff;
+    text-align: center;
+    margin: 5px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    height: 450px;
+    width: 300px;
+    display: flex;
     position: relative;
-    background: black;
-    max-width: 100%;
-    min-height: 650px;
-    height: 410px;
-    margin: 0 auto;
-    overflow: hidden; }
-    section .card-wrapper .card {
-      color: white;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      width: 300px;
-      /* Box dimensions */
-      height: 400px;
-      transform: translate(-50%, -50%); }
-      section .card-wrapper .card h1 {
-        font-family: 'League Gothic', sans-serif;
-        font-size: 36px;
-        line-height: 100px;
-        color: white; }
-      section .card-wrapper .card p {
-        padding-top: 100px;
-        font-family: 'League Gothic', sans-serif;
-        font-size: 20px; }
-      section .card-wrapper .card .card-sisters {
-        background-image: url(/img/card-sister.jpg); }
-      section .card-wrapper .card .card-space-marine {
-        background-image: url(/img/card-space-marine.jpg); }
-      section .card-wrapper .card .card-mechanicus {
-        background-image: url(/img/card-mechanicus.jpg); }
-      section .card-wrapper .card .card-custodes {
-        background-image: url(/img/card-custodes.jpg); }
-      section .card-wrapper .card .card-militarum {
-        background-image: url(/img/card-astra-militarum.jpg); }
-      section .card-wrapper .card .card-necron {
-        background-image: url(/img/card-necron.jpg); }
+    vertical-align: middle; }
+    section .carousel .card h1 {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 36px;
+      line-height: 100px;
+      color: white; }
+    section .carousel .card p {
+      padding-top: 100px;
+      font-family: 'League Gothic', sans-serif;
+      font-size: 20px;
+      vertical-align: middle; }
+  section .carousel .card-1 {
+    background-image: url(/img/card-sister.jpg); }
+  section .carousel .card-2 {
+    background: url(/img/card-space-marine.jpg); }
+  section .carousel .card-3 {
+    background: url(/img/card-mechanicus.jpg); }
+  section .carousel .card-4 {
+    background: url(/img/card-custodes.jpg); }
+  section .carousel .card-5 {
+    background: url(/img/card-astra-militarum.jpg); }
+  section .owl-dots {
+    text-align: center;
+    margin-top: 40px; }
+  section .owl-dot {
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #0072bc !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; }
+  section .owl-dot.active,
+  section .owl-dot:hover {
+    background: #0072bc !important; }
 
 footer {
   background-color: #000;

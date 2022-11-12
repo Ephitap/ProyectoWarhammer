@@ -61,6 +61,9 @@ header {
     padding-left: 100px;
 
 }
+.content_nav ul{
+    text-align: center;
+}
 
 .content_nav li{
     display: inline-block;
@@ -128,6 +131,7 @@ header {
         overflow: hidden;
         transition: all ease-in-out 0.6s;
         gap: 10px;
+        padding-left: 0px;
     }
 
     .nav_checkbox input:checked ~ .content_nav{
