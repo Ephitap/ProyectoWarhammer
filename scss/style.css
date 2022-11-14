@@ -14,6 +14,130 @@ body {
   position: relative;
 }
 
+.gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+}
+
+.gtco-testimonials h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.gtco-testimonials .owl-stage-outer {
+  padding: 30px 0;
+}
+
+.gtco-testimonials .owl-nav {
+  display: none;
+}
+
+.gtco-testimonials .owl-dots {
+  text-align: center;
+}
+
+.gtco-testimonials .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #01b0f8;
+  margin: 0 5px;
+}
+
+.gtco-testimonials .owl-dots .active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.gtco-testimonials .owl-dots .active span {
+  background: #01b0f8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 12px;
+  width: 12px;
+  margin-bottom: -1px;
+}
+
+.gtco-testimonials .card {
+  background: #fff;
+  -webkit-box-shadow: 0 8px 30px -7px #c9dff0;
+          box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  -webkit-box-shadow: 0 8px 20px -4px #95abbb;
+          box-shadow: 0 8px 20px -4px #95abbb;
+  width: 100px;
+  height: 100px;
+}
+
+.gtco-testimonials .card h5 {
+  color: #01b0f8;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.gtco-testimonials .card h5 span {
+  font-size: 18px;
+  color: #666666;
+}
+
+.gtco-testimonials .card p {
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 15px;
+}
+
+.gtco-testimonials .active {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.gtco-testimonials .center {
+  opacity: 1;
+}
+
+.gtco-testimonials .center h5 {
+  font-size: 24px;
+}
+
+.gtco-testimonials .center h5 span {
+  font-size: 20px;
+}
+
+.gtco-testimonials .center .card-img-top {
+  max-width: 100%;
+  height: 120px;
+  width: 120px;
+}
+
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  outline: 0;
+}
+
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
 header {
   background: url(../img/40k-header.jpg);
   border: 2px solid black;
@@ -231,6 +355,18 @@ main .horus-titulo img {
   height: 560px;
 }
 
+@media (max-width: 768px) {
+  main .horus-titulo img {
+    height: 328px;
+  }
+}
+
+@media (max-width: 425px) {
+  main .horus-titulo img {
+    height: 179.6px;
+  }
+}
+
 main .logoGW img {
   display: block;
   margin-left: auto;
@@ -322,64 +458,220 @@ section article .container-section-mesa img {
   margin-right: auto;
 }
 
-.card {
-  color: white;
-  position: relative;
-  overflow: hidden;
+section .wrapper {
+  width: 100%;
+}
+
+section .carousel {
+  max-width: 980px;
+  margin: auto;
+  padding: 0;
+}
+
+section .carousel .card {
+  color: #fff;
+  text-align: center;
+  margin: 5px 0;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  height: 450px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  /* Box dimensions */
-  height: 400px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-image: url(/img/card-sister.jpg);
+  position: relative;
+  vertical-align: middle;
 }
 
-.card img {
-  display: block;
-}
-
-.card h1 {
+section .carousel .card h1 {
   font-family: 'League Gothic', sans-serif;
   font-size: 36px;
   line-height: 100px;
   color: white;
 }
 
-.card p {
+section .carousel .card p {
   padding-top: 100px;
   font-family: 'League Gothic', sans-serif;
   font-size: 20px;
+  vertical-align: middle;
 }
 
-.card .card-sisters {
+section .carousel .card-1 {
   background-image: url(/img/card-sister.jpg);
 }
 
-.card .card-space-marine {
-  background-image: url(/img/card-space-marine.jpg);
+section .carousel .card-2 {
+  background: url(/img/card-space-marine.jpg);
 }
 
-.card .card-mechanicus {
-  background-image: url(/img/card-mechanicus.jpg);
+section .carousel .card-3 {
+  background: url(/img/card-mechanicus.jpg);
 }
 
-.card .card-custodes {
-  background-image: url(/img/card-custodes.jpg);
+section .carousel .card-4 {
+  background: url(/img/card-custodes.jpg);
 }
 
-.card .card-militarum {
-  background-image: url(/img/card-astra-militarum.jpg);
+section .carousel .card-5 {
+  background: url(/img/card-astra-militarum.jpg);
 }
 
-.card .card-necron {
-  background-image: url(/img/card-necron.jpg);
+section .owl-dots {
+  text-align: center;
+  margin-top: 40px;
+  display: none;
 }
 
-.owl-item {
-  height: 400px;
+section .owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc !important;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section .owl-dot.active,
+section .owl-dot:hover {
+  background: #0072bc !important;
+}
+
+.section-games {
+  height: 2000px;
+}
+
+.section-games h4 {
+  padding-top: 30px;
+}
+
+.section-games h6 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  .section-games h6 {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-horus-heresy {
+    height: 1600px;
+  }
+}
+
+.section-games-sub-factions {
+  background-image: url(/img/bg-space-marine.jpg);
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+
+.section-games-sub-factions .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.section-games-sub-factions .prev, .section-games-sub-factions .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.section-games-sub-factions .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.section-games-sub-factions .prev:hover, .section-games-sub-factions .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-games-sub-factions .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-games-sub-factions .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.section-games-sub-factions .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.section-games-sub-factions .active, .section-games-sub-factions .dot:hover {
+  background-color: #717171;
+}
+
+.section-games-sub-factions .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 footer {

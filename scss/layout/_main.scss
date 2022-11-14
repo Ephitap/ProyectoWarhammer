@@ -60,6 +60,12 @@ main {
 }
 .horus-titulo img{
     height: 560px;
+    @media(max-width:768px){
+        height:328px;
+    }
+    @media(max-width:425px) {
+        height:179.6px;
+    }
 }
 .logoGW img{ 
     display: block;
