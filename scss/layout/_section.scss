@@ -3,8 +3,8 @@ section {
     height: 972px;
     color: black;
     text-shadow: none;
-    
-    
+
+
     h3 {
         font-family: 'League Gothic', sans-serif;
         text-align: center;
@@ -80,25 +80,29 @@ section {
             margin-right: auto;
         }
     }
-    .wrapper{
+
+    .wrapper {
         width: 100%;
 
-        }
-        .carousel{
+    }
+
+    .carousel {
         max-width: 980px;
         margin: auto;
-        padding: 0 ;
-        }
-        .carousel .card{
+        padding: 0;
+    }
+
+    .carousel .card {
         color: #fff;
         text-align: center;
         margin: 5px 0;
-        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         height: 450px;
-        width:300px;
+        width: 300px;
         display: flex;
         position: relative;
         vertical-align: middle;
+
         h1 {
             font-family: 'League Gothic', sans-serif;
             font-size: 36px;
@@ -112,142 +116,127 @@ section {
             font-size: 20px;
             vertical-align: middle;
         }
-        }
-        .carousel .card-1{           
+    }
+
+    .carousel .card-1 {
         background-image: url(/img/card-sister.jpg);
-        }
-        .carousel .card-2{
+    }
+
+    .carousel .card-2 {
         background: url(/img/card-space-marine.jpg);
-        }
-        .carousel .card-3{
+    }
+
+    .carousel .card-3 {
         background: url(/img/card-mechanicus.jpg)
-        }
-        .carousel .card-4{
+    }
+
+    .carousel .card-4 {
         background: url(/img/card-custodes.jpg)
-        } 
-        .carousel .card-5{
+    }
+
+    .carousel .card-5 {
         background: url(/img/card-astra-militarum.jpg);
-        }
-        .owl-dots{
+    }
+
+    .owl-dots {
         text-align: center;
         margin-top: 40px;
         display: none;
-        }
-        .owl-dot{
+    }
+
+    .owl-dot {
         height: 15px;
         width: 45px;
         margin: 0 5px;
         outline: none;
         border-radius: 14px;
-        border: 2px solid #0072bc!important;
-        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        border: 2px solid #0072bc !important;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
+    }
+
+    .owl-dot.active,
+    .owl-dot:hover {
+        background: #0072bc !important;
+    }
+}
+
+.section-games {
+    height: 2000px;
+
+    h4 {
+        padding-top: 30px;
+    }
+
+    h6 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        margin-right: 300px;
+        margin-left: 300px;
+        font-size: 1.2rem;
+        font-weight: lighter;
+
+        @media(max-width:768px) {
+            margin-right: 50px;
+            margin-left: 50px;
         }
-        .owl-dot.active,
-        .owl-dot:hover{
-        background: #0072bc!important;
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        right: 0;
+        animation: 22s slider infinite;
+    }
+    .slider figure img {
+        width: 20%;
+        float: left;
+    }
+    
+    @keyframes slider {
+        0% {
+            left: 0;
         }
-        }    
-        .section-games{
-            height:2000px;
-            h4{
-                padding-top: 30px;
-            }
-            h6{
-                padding-top: 30px;
-                padding-bottom: 30px;
-                text-align: center;
-                margin-right: 300px;
-                margin-left: 300px;
-                font-size: 1.2rem;
-                font-weight:lighter;
-                @media(max-width:768px) {
-                    margin-right: 50px;
-                    margin-left: 50px;
-                }
-            }
+        20% {
+            left: 0;
         }
-        .section-horus-heresy{
-            @media(max-width:768px) {
-                height:1600px;
-            }
+        25% {
+            left: -100%;
         }
-        .section-games-sub-factions{
-            background-image: url(/img/bg-space-marine.jpg);
-            .slideshow-container {
-                max-width: 1000px;
-                position: relative;
-                margin: auto;
-              }
-              
-              .prev, .next {
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                margin-top: -22px;
-                padding: 16px;
-                color: white;
-                font-weight: bold;
-                font-size: 18px;
-                transition: 0.6s ease;
-                border-radius: 0 3px 3px 0;
-                user-select: none;
-              }
-              .next {
-                right: 0;
-                border-radius: 3px 0 0 3px;
-              }
-              
-              /* On hover, add a black background color with a little bit see-through */
-              .prev:hover, .next:hover {
-                background-color: rgba(0,0,0,0.8);
-              }
-              
-              /* Caption text */
-              .text {
-                color: #f2f2f2;
-                font-size: 15px;
-                padding: 8px 12px;
-                position: absolute;
-                bottom: 8px;
-                width: 100%;
-                text-align: center;
-              }
-              
-              /* Number text (1/3 etc) */
-              .numbertext {
-                color: #f2f2f2;
-                font-size: 12px;
-                padding: 8px 12px;
-                position: absolute;
-                top: 0;
-              }
-              
-              /* The dots/bullets/indicators */
-              .dot {
-                cursor: pointer;
-                height: 15px;
-                width: 15px;
-                margin: 0 2px;
-                background-color: #bbb;
-                border-radius: 50%;
-                display: inline-block;
-                transition: background-color 0.6s ease;
-              }
-              
-              .active, .dot:hover {
-                background-color: #717171;
-              }
-              
-              /* Fading animation */
-              .fade {
-                animation-name: fade;
-                animation-duration: 1.5s;
-              }
-              
-              @keyframes fade {
-                from {opacity: .4}
-                to {opacity: 1}
-              }
+        45% {
+            left: -100%;
         }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+}
+
+.section-horus-heresy {
+    @media(max-width:768px) {
+        height: 1600px;
+    }
+}
+
+.section-games-sub-factions {
+    background-image: url(/img/bg-space-marine.jpg);
+
+}

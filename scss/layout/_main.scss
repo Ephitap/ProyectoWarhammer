@@ -59,13 +59,19 @@ main {
     }
 }
 .horus-titulo img{
-    height: 560px;
-    @media(max-width:768px){
+    height: 563px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    @media (min-width: 425px) and (max-width: 768px) {
+        
         height:328px;
     }
-    @media(max-width:425px) {
-        height:179.6px;
+    @media only screen and (max-width: 667px) {
+        
+        height:211px;
     }
+    
 }
 .logoGW img{ 
     display: block;
