@@ -18,11 +18,16 @@ header {
     z-index: 3;
 }
 
-.logo-header {
-    position: absolute;
+.logo-header{
+    transform: translateY(10px);
+}
+.logo-header img{
+    position: inherit;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 50px;
+    
 }
 
 .tab-nav {
@@ -49,7 +54,7 @@ header {
 }
 
 .content_nav {
-    padding-top: 100px;
+    padding-top: 10px;
     list-style: none;
     /*elimina los puntos del li*/
     display: flex;
