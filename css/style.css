@@ -198,6 +198,7 @@ main {
   color: white;
   text-shadow: 0 2px 12px #000;
   font-family: 'League Gothic', sans-serif;
+  background-image: url(/img/space.jpg);
   /*---iframes---*/ }
   main h1 {
     text-align: center;
