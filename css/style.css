@@ -9,7 +9,8 @@
 body {
   height: 100vh;
   width: 100%;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 .gtco-testimonials {
   position: relative;
@@ -199,6 +200,7 @@ main {
   text-shadow: 0 2px 12px #000;
   font-family: 'League Gothic', sans-serif;
   background-image: url(/img/space.jpg);
+  width: 100%;
   /*---iframes---*/ }
   main h1 {
     text-align: center;
@@ -342,9 +344,13 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-    @media (max-width: 768px) {
+    @media (min-width: 425px) and (max-width: 768px) {
       section .container-section img {
-        width: 480px; } }
+        height: 480px; } }
+    @media only screen and (max-width: 667px) {
+      section .container-section img {
+        height: 200px;
+        width: 419px; } }
   section article .container-section-libro img {
     height: 150px;
     display: block;
@@ -391,6 +397,12 @@ section {
     background: url(/img/card-custodes.jpg); }
   section .carousel .card-5 {
     background: url(/img/card-astra-militarum.jpg); }
+  section .carousel .card-6 {
+    background: url(/img/card-imperial-knight.jpg); }
+  section .carousel .card-7 {
+    background: url(/img/card-caos-marine.jpg); }
+  section .carousel .card-8 {
+    background: url(/img/card-drukhari.jpg); }
   section .owl-dots {
     text-align: center;
     margin-top: 40px;
@@ -409,7 +421,7 @@ section {
     background: #0072bc !important; }
 
 .section-games {
-  height: 2000px; }
+  height: 800px; }
   .section-games h4 {
     padding-top: 30px; }
   .section-games h6 {
@@ -457,22 +469,50 @@ section {
   100% {
     left: -400%; } }
 
-@media (max-width: 768px) {
-  .section-horus-heresy {
-    height: 1600px; } }
+.section-horus-heresy {
+  height: 1100px; }
+  @media (max-width: 768px) {
+    .section-horus-heresy {
+      height: 1800px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
   .section-libros {
     height: 1600px; } }
 
+@media only screen and (max-width: 667px) {
+  .section-libros {
+    height: 3500px; } }
+
 .section-games-sub-factions {
-  background-image: url(/img/bg-space-marine.jpg); }
+  background-image: url(/img/bg-space-marine.jpg);
+  height: 2000px; }
+  .section-games-sub-factions p {
+    margin: 0 0 1.5em;
+    box-sizing: inherit;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: black; }
+  .section-games-sub-factions img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+  @media (max-width: 768px) {
+    .section-games-sub-factions {
+      height: 1300px; }
+      .section-games-sub-factions p {
+        margin-right: 50px;
+        margin-left: 50px; } }
 
 .section-libros {
   height: 900px; }
   @media (max-width: 1280px) {
     .section-libros {
       height: 2000px; } }
+  @media (max-width: 765px) {
+    .section-libros {
+      height: 4000px; } }
   .section-libros .search-bar {
     width: 100%;
     height: 20%;
@@ -499,6 +539,9 @@ section {
         align-self: center;
         padding: 10px 20px;
         color: gray; }
+    @media (max-width: 765px) {
+      .section-libros .search-bar {
+        height: 3%; } }
   .section-libros .container-libros {
     display: flex;
     padding-left: 20px;
@@ -561,6 +604,41 @@ section {
         color: white; }
       .section-libros .container-pagination .pagination a:hover:not(.active) {
         background-color: white; }
+
+.container-formulario form {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f900;
+  border: 1px solid #868686;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  padding: 1em; }
+  .container-formulario form form input {
+    background: #fff;
+    border: 1px solid #9c9c9c; }
+  .container-formulario form form button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0; }
+
+.container-formulario label {
+  padding: 0.5em 0.5em 0.5em 0; }
+
+.container-formulario input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem; }
+
+@media (min-width: 400px) {
+  .container-formulario form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px; }
+  .container-formulario label {
+    text-align: right;
+    grid-column: 1 / 2; }
+  .container-formulario input,
+  .container-formulario button {
+    grid-column: 2 / 3; } }
 
 footer {
   background-color: #000;

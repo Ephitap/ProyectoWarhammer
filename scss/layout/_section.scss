@@ -3,7 +3,7 @@ section {
     height: 972px;
     color: black;
     text-shadow: none;
-
+    
 
     h3 {
         font-family: 'League Gothic', sans-serif;
@@ -60,8 +60,14 @@ section {
         margin-left: auto;
         margin-right: auto;
 
-        @media(max-width:768px) {
-            width: 480px;
+        @media (min-width: 425px) and (max-width: 768px) {
+        
+            height:480px;
+        }
+        @media only screen and (max-width: 667px) {
+            
+            height:200px;
+            width: 419px;
         }
     }
  /**/
@@ -138,6 +144,17 @@ section {
         background: url(/img/card-astra-militarum.jpg);
     }
 
+    .carousel .card-6 {
+        background: url(/img/card-imperial-knight.jpg);
+    }
+
+    .carousel .card-7 {
+        background: url(/img/card-caos-marine.jpg);
+    }
+    .carousel .card-8 {
+        background: url(/img/card-drukhari.jpg);
+    }
+
     .owl-dots {
         text-align: center;
         margin-top: 40px;
@@ -162,7 +179,7 @@ section {
 }
 
 .section-games {
-    height: 2000px;
+    height: 800px;
 
     h4 {
         padding-top: 30px;
@@ -241,18 +258,48 @@ section {
 }
 
 .section-horus-heresy {
+    height: 1100px;
     @media(max-width:768px) {
-        height: 1600px;
+        height: 1800px;
     }
+    
 }
 .section-libros {
-    @media(min-width:768px) {
-        height: 1600px;
+    @media (min-width: 425px) and (max-width: 768px) {
+        
+        height:1600px;
+    }
+    @media only screen and (max-width: 667px) {
+        
+        height:3500px;
     }
 }
 
 .section-games-sub-factions {
     background-image: url(/img/bg-space-marine.jpg);
+    height: 2000px;
+    p{
+        margin: 0 0 1.5em;
+        box-sizing: inherit;
+        font-size: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+        color: black;
+        
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    @media(max-width:768px) {
+        height: 1300px;
+        p{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    }
 
 }
 
@@ -260,6 +307,9 @@ section {
     height: 900px;
     @media(max-width:1280px) {
         height: 2000px;
+    }
+    @media(max-width:765px) {
+        height: 4000px;
     }
     
     .search-bar {
@@ -296,6 +346,9 @@ section {
                 padding: 10px 20px;
                 color: gray;
             }
+        }
+        @media(max-width:765px) {
+            height: 3%;
         }
     }
 
@@ -389,4 +442,50 @@ section {
     }
 }
 
+}
+.container-formulario{
+    form {
+        display: grid;
+        padding: 1em;
+        background: #f9f9f900;
+        border: 1px solid #868686;
+        margin: 2rem auto 0 auto;
+        max-width: 600px;
+        padding: 1em;
+        form input {
+            background: #fff;
+            border: 1px solid #9c9c9c;
+          }
+          form button {
+            background: lightgrey;
+            padding: 0.7em;
+            width: 100%;
+            border: 0;
+          }
+      }
+      label {
+        padding: 0.5em 0.5em 0.5em 0;
+      }
+      input {
+        padding: 0.7em;
+        margin-bottom: 0.5rem;
+      }
+
+      
+      @media (min-width: 400px) {
+        form {
+          grid-template-columns: 200px 1fr;
+          grid-gap: 16px;
+        }
+      
+        label {
+          text-align: right;
+          grid-column: 1 / 2;
+        }
+      
+        input,
+        button {
+          grid-column: 2 / 3;
+        }
+      }
 }
