@@ -1,2 +1,2 @@
-Debido a problemas que tuve con git cambie el repositorio de github,no pude recuperar las otras branch, pero se crearan mas a futuro,
-me disculpo por los inconvenientes
+Proyecto listo para la Entrega, me recomendaron que arreglara las href de la navbar, pero al usar Visual Studio Code y subir al servidor el proyecto al host
+se ve que estos funcionan bien.
