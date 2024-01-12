@@ -3,4 +3,4 @@ se ve que estos funcionan bien.
 
 Proyecto Basado en Warhammer 40K
 
-Link de la pagina: https://pyrotechnic-sand.000webhostapp.com/index.html
+Link de la pagina: https://proyectowarhammer40k.000webhostapp.com
